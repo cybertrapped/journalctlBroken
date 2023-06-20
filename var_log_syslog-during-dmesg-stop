@@ -1,0 +1,62 @@
+# THIS IS AN EXCERPT OF /var/log/syslog DURING THE LAST MINUTE BEFORE dmesg STOPS (i.e., 09:52:59 kernel: [  407.903498] )
+# THE LAST FOUR LINES, IS WHEN DMESG ACTUALLY STOPPED
+
+Jun 20 09:50:59 ubuntuH kernel: [  347.904989] systemd[1]: update-notifier-download.timer: Timer elapsed.
+Jun 20 09:50:59 ubuntuH kernel: [  347.905011] systemd[1]: update-notifier-download.service: Trying to enqueue job update-notifier-download.service/start/replace
+Jun 20 09:50:59 ubuntuH kernel: [  347.905329] systemd[1]: ovsdb-server.service: Cannot add dependency job, ignoring: Unit ovsdb-server.service not found.
+Jun 20 09:50:59 ubuntuH kernel: [  347.905376] systemd[1]: tmp.mount: Cannot add dependency job, ignoring: Unit tmp.mount not found.
+Jun 20 09:50:59 ubuntuH kernel: [  347.905452] systemd[1]: update-notifier-download.service: Installed new job update-notifier-download.service/start as 1750
+Jun 20 09:50:59 ubuntuH kernel: [  347.905470] systemd[1]: update-notifier-download.service: Enqueued job update-notifier-download.service/start as 1750
+Jun 20 09:50:59 ubuntuH kernel: [  347.905483] systemd[1]: update-notifier-download.timer: Changed waiting -> running
+Jun 20 09:50:59 ubuntuH kernel: [  347.905548] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2etimer interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4254 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.905584] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2etimer interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4255 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.905613] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4256 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.905631] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4257 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.905639] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobNew cookie=4258 reply_cookie=0 signature=uos error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.905701] systemd[1]: systemd-timesyncd.service: Got notification message from PID 530 (WATCHDOG=1)
+Jun 20 09:50:59 ubuntuH kernel: [  347.905738] systemd[1]: update-notifier-download.service: ConditionFileIsExecutable=/usr/lib/update-notifier/package-data-downloader succeeded.
+Jun 20 09:50:59 ubuntuH kernel: [  347.930917] systemd[1]: update-notifier-download.service: Failed to set 'io.bfq.weight' attribute on '/system.slice/update-notifier-download.service' to '100': No such file or directory
+Jun 20 09:50:59 ubuntuH kernel: [  347.931033] systemd[1]: Failed to read pids.max attribute of cgroup root, ignoring: No data available
+Jun 20 09:50:59 ubuntuH kernel: [  347.931134] systemd[1]: update-notifier-download.service: Passing 0 fds to service
+Jun 20 09:50:59 ubuntuH kernel: [  347.931158] systemd[1]: update-notifier-download.service: About to execute /usr/lib/update-notifier/package-data-downloader
+Jun 20 09:50:59 ubuntuH kernel: [  347.931561] systemd[1]: update-notifier-download.service: Forked /usr/lib/update-notifier/package-data-downloader as 7978
+Jun 20 09:50:59 ubuntuH kernel: [  347.932019] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4259 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.932106] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4260 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.932112] systemd[1]: update-notifier-download.service: Changed dead -> start
+Jun 20 09:50:59 ubuntuH kernel: [  347.932131] systemd[1]: Starting Download data for packages that failed at package install time...
+Jun 20 09:50:59 ubuntuH kernel: [  347.932256] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4261 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.932296] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4262 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.932331] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/job/1750 interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4263 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  347.932346] systemd[7978]: update-notifier-download.service: Executing: /usr/lib/update-notifier/package-data-downloader
+Jun 20 09:50:59 ubuntuH kernel: [  347.932408] systemd[1]: systemd-logind.service: Got notification message from PID 756 (WATCHDOG=1)
+Jun 20 09:50:59 ubuntuH kernel: [  347.932548] systemd[1]: systemd-journald.service: Got notification message from PID 372 (FDSTORE=1)
+Jun 20 09:50:59 ubuntuH kernel: [  347.932577] systemd[1]: systemd-journald.service: Added fd 40 (n/a) to fd store.
+Jun 20 09:50:59 ubuntuH kernel: [  348.006252] systemd[1]: Received SIGCHLD from PID 7978 (package-data-do).
+Jun 20 09:50:59 ubuntuH kernel: [  348.006301] systemd[1]: Child 7978 (package-data-do) died (code=exited, status=0/SUCCESS)
+Jun 20 09:50:59 ubuntuH kernel: [  348.006349] systemd[1]: update-notifier-download.service: Child 7978 belongs to update-notifier-download.service.
+Jun 20 09:50:59 ubuntuH kernel: [  348.006357] systemd[1]: update-notifier-download.service: Main process exited, code=exited, status=0/SUCCESS (success)
+Jun 20 09:50:59 ubuntuH kernel: [  348.006469] systemd[1]: update-notifier-download.service: Deactivated successfully.
+Jun 20 09:50:59 ubuntuH kernel: [  348.006489] systemd[1]: update-notifier-download.service: Service will not restart (restart setting)
+Jun 20 09:50:59 ubuntuH kernel: [  348.006493] systemd[1]: update-notifier-download.service: Changed start -> dead
+Jun 20 09:50:59 ubuntuH kernel: [  348.006763] systemd[1]: update-notifier-download.service: Job 1750 update-notifier-download.service/start finished, result=done
+Jun 20 09:50:59 ubuntuH kernel: [  348.006767] systemd[1]: Finished Download data for packages that failed at package install time.
+Jun 20 09:50:59 ubuntuH kernel: [  348.006839] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4264 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  348.006875] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4265 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  348.006891] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1 interface=org.freedesktop.systemd1.Manager member=JobRemoved cookie=4266 reply_cookie=0 signature=uoss error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  348.006951] systemd[1]: update-notifier-download.timer: Got notified about unit deactivation.
+Jun 20 09:50:59 ubuntuH kernel: [  348.006960] systemd[1]: update-notifier-download.timer: Monotonic timer elapses in 23h 59min 59.925159s.
+Jun 20 09:50:59 ubuntuH kernel: [  348.006965] systemd[1]: update-notifier-download.timer: Changed running -> waiting
+Jun 20 09:50:59 ubuntuH kernel: [  348.007117] systemd[1]: update-notifier-download.service: Consumed 60ms CPU time.
+Jun 20 09:50:59 ubuntuH kernel: [  348.007124] systemd[1]: update-notifier-download.timer: Monotonic timer elapses in 23h 59min 59.924991s.
+Jun 20 09:50:59 ubuntuH kernel: [  348.007204] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2etimer interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4267 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  348.007242] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2etimer interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4268 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  348.007344] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4269 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  348.007378] systemd[1]: Sent message type=signal sender=n/a destination=n/a path=/org/freedesktop/systemd1/unit/update_2dnotifier_2ddownload_2eservice interface=org.freedesktop.DBus.Properties member=PropertiesChanged cookie=4270 reply_cookie=0 signature=sa{sv}as error-name=n/a error-message=n/a
+Jun 20 09:50:59 ubuntuH kernel: [  348.007451] systemd[1]: update-notifier-download.service: Control group is empty.
+Jun 20 09:50:59 ubuntuH kernel: [  348.007459] systemd[1]: systemd-journald.service: Received EPOLLHUP on stored fd 40 (stored), closing.
+Jun 20 09:51:59 ubuntuH kernel: [  407.496913] systemd[1]: systemd-networkd.service: Got notification message from PID 602 (WATCHDOG=1)
+Jun 20 09:51:59 ubuntuH kernel: [  407.500996] systemd[1]: systemd-journald.service: Got notification message from PID 372 (WATCHDOG=1)
+Jun 20 09:51:59 ubuntuH kernel: [  407.903459] systemd[1]: systemd-udevd.service: Got notification message from PID 645 (WATCHDOG=1)
+Jun 20 09:51:59 ubuntuH kernel: [  407.903498] systemd[1]: systemd-resolved.service: Got notification message from PID 621 (WATCHDOG=1)
+
+
